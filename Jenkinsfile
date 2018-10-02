@@ -1,4 +1,8 @@
 node {
+    stage('Source') {
+        echo 'This is from '
+        sh 'printenv'
+    }
     stage('Cleanup') {
         step([$class: 'WsCleanup'])
     }
