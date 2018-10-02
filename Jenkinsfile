@@ -1,6 +1,6 @@
 node {
     stage('Source') {
-        echo 'This is from '
+        echo 'This is build ${env.BUILD_TAG} '
         sh 'printenv'
     }
     stage('Cleanup') {
